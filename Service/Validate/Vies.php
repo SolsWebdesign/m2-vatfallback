@@ -36,7 +36,7 @@ class Vies implements ValidationServiceInterface
      */
     public function __construct(
         ConfigurationInterface $configuration,
-        Client                 $client,
+        Client                 $client
     ) {
         $this->configuration = $configuration;
         $this->client        = $client;

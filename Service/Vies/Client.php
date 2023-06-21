@@ -24,7 +24,7 @@ class Client
     public function getViesResponse(
         string $countryIso,
         string $vatNumber,
-        int    $timeout = 1,
+        int    $timeout = 1
     ): mixed {
         $cacheKey = $countryIso . $vatNumber;
         if (isset(self::$validationResult[$cacheKey])) {
